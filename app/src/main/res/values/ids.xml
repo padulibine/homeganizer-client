@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item
+        name="menuQRCodeG"
+        type="id" />
+    <item
+        name="menuQRCodeS"
+        type="id" />
+    <item
+        name="menuQRCodeGColl"
+        type="id" />
+</resources>

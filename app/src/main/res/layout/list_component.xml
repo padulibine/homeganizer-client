@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_component"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/object" />
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view_separation"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/list_component_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/component_default_name"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_separation"
+        app:layout_constraintStart_toEndOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/list_component_descrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/component_default_name"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/list_component_name"
+        app:layout_constraintTop_toBottomOf="@+id/view_separation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

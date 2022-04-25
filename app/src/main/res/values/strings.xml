@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">homeganizer-client</string>
+    <string name="container_str">Container</string>
+    <string name="component_default_name">Default Name</string>
+    <string name="qrCode">qrCode</string>
+    <string name="menuQRCodeG">Generate QRCode</string>
+    <string name="menuQRCodeS">QRCode Scanner</string>
+    <string name="menuQRCodeGColl">Generate Collection QRCode</string>
+    <string name="buttonImport">Import</string>
+    <string name="buttonAdd">Add</string>
+    <string name="txtAddColl">Enter Collection Name</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/add_object_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:hint="Nom"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@id/add_object_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_object_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="TAG"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_object_description"
+        app:layout_constraintEnd_toEndOf="@+id/add_object_name"
+        app:layout_constraintStart_toStartOf="@+id/add_object_name"
+        app:layout_constraintTop_toBottomOf="@+id/add_object_name" />
+
+    <EditText
+        android:id="@+id/add_object_description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="558dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_object_name" />
+
+    <Button
+        android:id="@+id/add_object_buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="308dp"
+        android:text="ajouter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_object_description" />
+
+    <CheckBox
+        android:id="@+id/add_object_checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conteneur"
+        app:layout_constraintBottom_toTopOf="@+id/add_object_buttonAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_object_description"
+        app:layout_constraintVertical_bias="0.238" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@id/menuQRCodeS"
+        android:title="@string/menuQRCodeS" />
+
+    <item
+        android:id="@id/menuQRCodeG"
+        android:title="@string/menuQRCodeG" />
+
+    <item
+        android:id="@id/menuQRCodeGColl"
+        android:title="@string/menuQRCodeGColl" />
+
+</menu>
